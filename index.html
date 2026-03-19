@@ -1,10 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi primera web</title>
+  <meta charset="UTF-8">
+  <title>Alma Mía - Joyas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #0f0f0f;
+      color: white;
+      text-align: center;
+    }
+    header {
+      background: black;
+      padding: 20px;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: #1c1c1c;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    button {
+      background: gold;
+      border: none;
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    footer {
+      margin-top: 30px;
+      padding: 20px;
+      background: black;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hola Joxe 🚀</h1>
-  <p>Mi primer proyecto en GitHub</p>
+
+<header>ALMA MÍA 💎</header>
+
+<h2>Nuestra colección</h2>
+
+<div class="productos">
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h3>Collar Elegante</h3>
+    <p>$19.990</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h3>Anillo Dorado</h3>
+    <p>$14.990</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h3>Pulsera Premium</h3>
+    <p>$24.990</p>
+    <button>Comprar</button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Alma Mía</p>
+</footer>
+
 </body>
 </html>
